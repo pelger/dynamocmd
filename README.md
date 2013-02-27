@@ -16,7 +16,7 @@ Whilst DynamoDB rocks, sometimes you need to adjust throughputs without having t
 
 ## Usage
 
-	dynamocmd -c <config file> [-r <region>] [-c <command>]
+	dynamocmd -f <config file> [-r <region>] [-c <command>]
 
 ### configuration file
 
@@ -52,7 +52,7 @@ Start dynamocmd in interactive mode. Available commands:
 
 ### Scripted
 
-	dynamocmd -c <config file> -c 'throughput mytable 2048 512' 
+	dynamocmd -f <config file> -c 'throughput mytable 2048 512' 
 
 Will set the table throughput to the specified values and exit.
 
