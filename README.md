@@ -1,14 +1,14 @@
 dynamocmd
 ==========
-Command line client for dynamodb. V0.1. 
+Command line client for Amazon DynamoDB. V0.1. 
 
-Why? - primarily a tool to aid with updating throughputs on dynamodb. Amazon DynamoDb allows throughput modification on the following basis:
+Why? - primarily a tool to aid with updating throughputs on Amazon DynamoDB. Amazon DynamoDb allows throughput modification on the following basis:
 
 * Throughput may be incremented by 100% on any one update
 * Takes ~60 seconds for a throughput update to process
 * Throughput may only be decremented twice in any 24 hour period
 
-Whilst DynamoDB rocks, sometimes you need to adjust throughputs without having to mess about with the web interface. dynamocmd automates this process and time and money!
+Whilst DynamoDB rocks, sometimes you need to adjust throughputs without having to mess about with the web interface. dynamocmd automates this process to save time and money!
 
 ## Installation
 
