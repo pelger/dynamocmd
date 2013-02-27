@@ -1,0 +1,33 @@
+{
+  "name": "dynamocmd",
+  "description": "AWS dynamodb command line utility",
+  "keywords": [
+    "aws",                   
+    "dynamo",
+    "dynamodb",                    
+    "command",
+    "cli"
+  ],
+  "version": "0.0.2",
+  "author": "pelger <peter.elger@betapond.com>",
+  "main": "./lib/main.js",
+  "bin": {
+    "dynamocmd": "./lib/main.js"     
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pelger/dynamocmd.git"
+  },
+  "preferGlobal": true,
+  "licenses": [{
+      "type": "WTFPL"
+    }
+  ],
+  "engines": {
+    "node": "0.8.x"
+  },
+  "dependencies": {
+    "aws-sdk": "0.9.5-pre.6",
+    "optimist": "0.3.4"
+  }
+}
