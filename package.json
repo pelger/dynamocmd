@@ -14,7 +14,7 @@
   "author": "pelger <peter.elger@betapond.com>",
   "main": "./lib/main.js",
   "bin": {
-    "dynamocmd": "./lib/main.js"     
+    "dynamocmd": "./bin/dynamocmd.js"     
   },
   "repository": {
     "type": "git",
