@@ -38,7 +38,11 @@ Start dynamocmd in interactive mode. Available commands:
 
 `dynamo> describe <table name>` describe the named table
 
-`query <table name> <pkey> <range comparison> <rkey>` run a query and return the first 20 results into the node repl
+`dynamo> query <table name> <pkey> <range comparison> <rkey>` run a query and return the first 20 results into the node repl, where:
+
+* `<pkey>` - primary key value
+* `<range comparison>` - comparison operator one of IN, NULL, BETWEEN, LT, NOT_CONTAINS, EQ, GT, NOT_NULL, NE, LE, BEGINS_WITH, GE, CONTAINS
+* `<rkey>` - range key value
 
 `dynamo> throughput <table name> <read> <write>` set the table read and write throughputs
 
@@ -49,6 +53,13 @@ Start dynamocmd in interactive mode. Available commands:
 `dynamo> throughput mytable 2048 512` will set the table throughput values to 2048 read, 512 write.
 
 `dynamo> throughput mytable 1 1` Will set a table back to idle.
+
+`dynamo> query mytable 37025542720 LT 1362229748`
+
+Will run the query and return the first 20 elements back to the node repl variable `data`:
+
+	repl>data.Items.length
+ 	20
 
 ### Scripted
 

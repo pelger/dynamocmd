@@ -3,12 +3,14 @@
   "description": "AWS dynamodb command line utility",
   "keywords": [
     "aws",                   
+    "amazon",                   
     "dynamo",
     "dynamodb",                    
     "command",
+    "line",
     "cli"
   ],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "pelger <peter.elger@betapond.com>",
   "main": "./lib/main.js",
   "bin": {
